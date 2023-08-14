@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+.static-side-bar{
+  z-index: 2;
+  width: 50px;
+  height: 100%;
+  position: fixed;
+  top: 100;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: -1px 0px 3px #00000024;
+
+}
+
+
+.sidebar {
+  overflow-y: auto;
+  width: 0px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 165px;
+}
+
+.sidebar.active {
+  .container-card{
+    background: transparent;
+    opacity: 100;
+    transition:2.75s;
+ 
+  }
+  width: 450px;
+  
+}
+
+.content {
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+
+.content.active{
+  margin-right:250px;
+}
+/*Comments CSS*/
+
+
+.list-group{
+  background-color: red;
+  float: right;
+  width: 100px;
+  
+  
+}
+
+.hover-container {
+  position: relative;
+ 
+  text-align: left;
+}
+
+.hover-button {
+  display: none;
+  
+  bottom: 10px;
+}
+
+.hover-container:hover .hover-button {
+ 
+  float: right ;
+}
+
+
+/*Table CSS*/
+
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+/*------===COMMENTS===------*/
+.card-body{
+  justify-content: center;
+}
+
+
+#table-size{  
+  width: 30rem;            
+
+}
+
+.list-group{
+  border: none;
+  background-color: white;
+  padding-right: 50px;
+  height: 120px;
+  width: 400px;
+}
+.list-group-item{
+  padding-top:30px;
+  border: none;
+}
+
+#buttons-comments{
+  
+  float: right;
+  border: none;
+}
+#cancel-btn{
+ 
+  background: transparent;
+  font-size: 12px;
+}
+#sumbit-btn{
+  
+  top: -100px;
+  font-size: 12px;
+  background: #F1F1F1;
+  border: 4px;
+}
+
+#make-comment{
+  
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+#hover-btn{
+  
+  display: flex;
+  float: inline-end;
+  display: none;
+}
+
+.container-card:hover{
+  transition: .1s;
+  background-color: transparent;
+}
+
+
+
+
+.container-card {
+  padding-left: 30px ;
+  transition: 0.15s;
+  opacity: 0;
+  display: absolute;
+  background-color: white;
+  max-width: 400px;
+
+}
+
+.header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+
+
+ 
+.btn-group{
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right:20px ;
+  display: flex;
+  height: fit-content;
+}
+
+
+.container-card:hover #btn-trash{
+  display: flex;
+}
+
+#btn-trash{
+  font-size: 18px;
+  border: none;
+  display: none;
+  background: transparent;
+}
+
+.container-card:hover #btn-pencil{
+  display: flex;
+  margin-left:220px;
+}
+
+#btn-pencil{
+  font-size: 18px;
+  border: none;
+  display: none;
+  margin-left:220px;
+  background: transparent;
+}
+
+.container-card:hover #resolve{
+  display: flex;
+  margin-left:80px;
+}
+#resolve{
+  
+  display: none;
+  margin-left: 80px;
+  padding-right: 10px;
+}
+
+
+
+
+
+#dropdown-btn{
+  padding-right: 20px;
+  font-size: 20px;
+  color: white;
+ background-color: #FF6537;
+ border: none;
+}
+#btn-with-plus{
+  background-color: #EB4716;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  
+ }
+
+ #btnGroupAddon2{
+  
+  font-size: 20px;
+ }
+
+ #filter-button{
+  position: fixed;
+  bottom: 20px;
+  background: transparent;
+  color: black;
+  border: 0;
+  font-size: 25px;
+  right: 15px;
+
+ }
+
+#sidebarToggle{
+  position: fixed;
+  background: transparent;
+  color: black;
+  border: 0;
+  font-size: 20px;
+  right: 12px;
+}
+
+/*----------TABLE AND BUTTONS----------*/
+
+.mat-mdc-tab-labels{
+  background-color: #F1F1F1;
+  color: #ff6537 !important;
+}
+.mat-mdc-tab-list{
+  color: #FF6537 !important;
+}
+
+.mat-mdc-tab-group{
+  width: auto;
+  box-shadow: 0 3px 6px #0000004D;
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+  color: #ff6537 !important;
+
+}
+
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+  color: #ff6537 !important;
+}
+
+.mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+  --mdc-tab-indicator-active-indicator-color: #ff0000;
+  --mat-tab-header-disabled-ripple-color: rgba(0, 0, 0, 0.38);
+  --mat-tab-header-pagination-icon-color: #000;
+  --mat-tab-header-inactive-label-text-color: rgba(0, 0, 0, 0.6);
+  --mat-tab-header-active-label-text-color: #f200ff;
+  --mat-tab-header-active-ripple-color: #ff0000;
+  --mat-tab-header-inactive-ripple-color: #ff0000;
+  --mat-tab-header-inactive-focus-label-text-color: rgba(0, 0, 0, 0.6);
+  --mat-tab-header-inactive-hover-label-text-color: rgba(0, 0, 0, 0.6);
+  --mat-tab-header-active-focus-label-text-color: #ff0000;
+  --mat-tab-header-active-hover-label-text-color: #ff0000;
+  --mat-tab-header-active-focus-indicator-color: #ff0000;
+  --mat-tab-header-active-hover-indicator-color: #ff0000;
+}
+
+.mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
+
+--mdc-filled-text-field-caret-color: #ff0000;
+--mdc-filled-text-field-focus-active-indicator-color: #ff0000;
+--mdc-filled-text-field-focus-label-text-color: #ff0000;
+}

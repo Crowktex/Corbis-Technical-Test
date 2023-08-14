@@ -1,0 +1,45 @@
+/* Style the sidebar - fixed full height */
+.sidebar-left {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4C4743;
+  overflow-x: hidden;
+}
+
+/* Style sidebar links */
+.sidebar-left a {
+  padding: 28px 28px 26px 16px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #BEB9B5;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar-left a:hover {
+  color: #FF6537;
+}
+
+#log-out{
+  position: absolute;
+  bottom: 10px;
+}
+#OrangeButton{
+  background-color: #FF6537;
+  color: #FFFFFF;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 80px; /* Same as the width of the sidenav */
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar-left {padding-top: 15px;}
+  .sidebar-left a {font-size: 18px;}
+}
